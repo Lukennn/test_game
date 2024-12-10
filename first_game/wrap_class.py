@@ -8,6 +8,8 @@ class App:
 
     def update(self):
         self.x = (self.x + 1) % pyxel.width
+        if pyxel.btnp(pyxel.KEY_Q):
+            pyxel.quite()
 
     def draw(self):
         pyxel.cls(0)
